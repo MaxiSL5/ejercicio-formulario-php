@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejemplo formulario xurxo">
+    <link rel="stylesheet" href="./style.css">
+    <title>Ejercico Formulario</title>
+</head>
+
+<body>
+    <main class="main-content">
+        <form action="send.php" method="post">
+            <h1>Formulario</h1>
+            <ul class="fields">
+                <li class="field">
+                    <label> <span id="nombre">Nombre *</span>
+                        <input required type="text" name="nombre" placeholder="Manolito">
+                    </label>
+                </li>
+                <li class="field">
+                    <label> <span>Apellidos </span>
+                        <input  type="text" name="apellidos" placeholder="Gafotas">
+                    </label>
+                </li>
+
+                <li class="field">
+                    <fieldset class="grupo-sexo">
+                        <legend>Sexo</legend>
+                        <label>
+                            <input type="radio" name="sexo" value="Hombre">Hombre
+                        </label>
+                        <label>
+                            <input type="radio" name="sexo" value="Mujer">Mujer
+                        </label>
+                    </fieldset>
+                </li>
+                <li class="field">
+                    <label> <span id="email">Email *</span>
+                        <input required type="email" name="email" placeholder="manolitogafotas@gmail.com">
+                    </label>
+                </li>
+                <li class="field">
+                    <label> <span>Nº teléfono</span>
+                        <input type="tel" name="telefono" placeholder="646548784">
+                    </label>
+                </li>
+            </ul>
+            <div aria-labelledby="nombre email">Los campos marcados con * son obligatorios</div>
+            <button>Enviar</button>
+        </form>
+    </main>
+</body>
+
+</html>
